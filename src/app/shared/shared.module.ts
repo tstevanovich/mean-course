@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import {
   MatAutocompleteModule,
   MatBadgeModule,
@@ -44,6 +45,7 @@ const PROVIDERS = [];
 const MODULES = [
   CommonModule,
   BrowserAnimationsModule,
+  ReactiveFormsModule,
   // Material Form Controls
   MatAutocompleteModule,
   MatCheckboxModule,

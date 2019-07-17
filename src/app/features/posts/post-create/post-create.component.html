@@ -1,1 +1,9 @@
-<p>post-create works!</p>
+<form novalidate [formGroup]="postForm">
+  <mat-form-field class="w100mb10">
+    <textarea rows="6" matInput formControlName="post"></textarea>
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="onAddPost()">
+    Save Post
+  </button>
+</form>
+<p>{{ post }}</p>
